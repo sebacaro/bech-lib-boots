@@ -1,0 +1,174 @@
+// INPUTS
+select ~ :after {
+    display: none;
+  }
+  
+  .web-kit-input-label {
+    &.web-kit-select {
+      position: relative;
+  
+      &.disabled {
+        pointer-events: none;
+  
+        select {
+          color: $font_color_light;
+          font-weight: 400;
+          background: #f7f7f7;;
+        }
+  
+        &:after {
+          opacity: 0.6;
+        }
+      }
+  
+      select {
+        appearance: none;
+        padding-right: 32px;
+      }
+  
+      &:after {
+        content: "\e952";
+        width: 24px;
+        background-size: contain;
+        display: block;
+        position: absolute;
+        height: 24px;
+        right: 0;
+        top: 32px;
+        margin-right: 8px;
+        pointer-events: none;
+      }
+    }
+  }
+  
+  .web-kit-input-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+  
+    label {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      color: $font_color;
+      transition: 0.25s ease-in-out;
+    }
+  
+    &:focus-within label {
+      color: $bech_color;
+    }
+  
+    &.input-prefix {
+      .prefix {
+        position: absolute;
+        top: 32px;
+        left: 16px;
+        font-weight: 700;
+      }
+  
+      input {
+        padding-left: 62px;
+      }
+    }
+  
+    input,
+    select,
+    textarea {
+      border-radius: 4px;
+      background-color: #ffffff;
+      border: solid 1px $border_color;
+      padding: 9px 16px;
+      line-height: 20px;
+      font-size: 1.000em;
+      font-weight: 700;
+      transition: 0.25s ease-in-out;
+      color: $font_color;
+      -webkit-appearance: none;
+  
+      &::placeholder {
+        color: $font_color_light;
+        font-weight: 400;
+      }
+  
+      &:active {
+        border: solid 1px $bech_color;
+        color: $font_color;
+      }
+  
+      &:focus {
+        outline: 0;
+        border: solid 1px $bech_color;
+        color: $font_color;
+      }
+  
+      &:focus + label {
+        color: #cc0000 !important;
+      }
+  
+      &:disabled {
+        color: $font_color_light;
+        font-weight: 400;
+  
+        &:after {
+          display: none;
+        }
+      }
+    }
+  
+    .info-text {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 4px;
+      color: $font_color_light;
+      font-weight: 600;
+  
+      &:empty {
+        margin: 0;
+      }
+  
+      &--error {
+        color: $red-color;
+      }
+    }
+  
+    .MsjeError {
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 4px;
+      color: $red_color;
+      font-weight: 600;
+  
+      &:empty {
+        margin: 0;
+      }
+    }
+  }
+  
+  input.ng-invalid.ng-dirty.ng-invalid.ng-touched {
+    border: solid 1px $red_color;
+  }
+  
+  // RADIOS
+  .radio_list {
+    display: flex;
+    flex-direction: column;
+  
+    mat-radio-button {
+      height: 48px;
+      display: flex;
+      align-items: center;
+  
+      label {
+        white-space: normal;
+        line-height: 24px;
+      }
+    }
+  }
+  
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  }

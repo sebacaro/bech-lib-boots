@@ -1,0 +1,50 @@
+// LOADING
+app-loading {
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    animation: myChange .25s ease-in-out;
+  
+    .loading_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+  
+      .loading_text {
+        font-size: 14px;
+        font-weight: 600;
+        color: $font_color_light;
+        padding: 16px;
+      }
+  
+      mat-spinner.small_spinner {
+        width: 48px;
+        height: 48px;
+  
+        svg {
+          width: 48px;
+          height: 48px;
+  
+          circle {
+            stroke-width: 12% !important;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes myChange {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
