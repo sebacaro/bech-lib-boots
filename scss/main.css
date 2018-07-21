@@ -1,37 +1,36 @@
-app-loading {
-  background: rgba(255, 255, 255, 0.9);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  animation: myChange .25s ease-in-out; }
-  app-loading .loading_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column; }
-    app-loading .loading_content .loading_text {
-      font-size: 14px;
-      font-weight: 600;
-      color: #868c99;
-      padding: 16px; }
-    app-loading .loading_content mat-spinner.small_spinner {
-      width: 48px;
-      height: 48px; }
-      app-loading .loading_content mat-spinner.small_spinner svg {
-        width: 48px;
-        height: 48px; }
-        app-loading .loading_content mat-spinner.small_spinner svg circle {
-          stroke-width: 12% !important; }
+.spinner, .spinner:after {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
 
-@keyframes myChange {
-  from {
-    opacity: 0; }
+.spinner {
+  background-color: transparent;
+  border-top: 5px solid #ff9100;
+  border-right: 5px solid #ff9100;
+  border-bottom: 5px solid #ff9100;
+  border-left: 5px solid rgba(255, 145, 0, 0);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: .8s;
+  animation-name: spinner-loading;
+  margin: 0 auto;
+  text-align: center; }
+
+@keyframes spinner-loading {
+  0% {
+    transform: rotate(0deg); }
   to {
-    opacity: 1; } }
+    transform: rotate(1turn); } }
+.texto-bajada-spinner {
+  text-align: center;
+  color: #3A3F4A;
+  margin: 15px 0;
+  font-family: 'nunito-regular';
+  font-weight: 100;
+  font-size: 14px;
+  color: #868C99; }
+
 .checkbox {
   position: relative;
   display: inline-block;
@@ -426,5 +425,19 @@ select:-webkit-autofill {
     background: #E1E4E7;
     text-decoration: none;
     color: #A4AAB6; }
+
+header {
+  background: linear-gradient(to right, #FFA90A, #E86051);
+  height: 56px;
+  line-height: 52px;
+  color: #ffffff;
+  font-family: 'nunito-light';
+  font-weight: 100;
+  font-size: 18px; }
+
+.volver, .notificacion {
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
