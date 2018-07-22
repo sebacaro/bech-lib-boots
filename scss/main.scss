@@ -9,3 +9,9 @@
 @import "components/_inputs";
 @import "components/_botones";
 @import "components/_header";
+@import "components/_cards";
+
+body {
+    font-family: 'nunito-regular';
+    color: $font_color_primary;
+}

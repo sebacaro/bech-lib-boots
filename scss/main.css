@@ -394,7 +394,7 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset !important; }
 
-.button-primary-bech, .button-secondary-bech, .button-accent-bech, .button-disable-bech {
+.button-primary-bech, .button-secondary-bech, .button-accent-bech, .button-accent2-bech, .button-disable-bech, .button-disable2-bech {
   border-radius: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   background-position: center;
@@ -407,7 +407,7 @@ select:-webkit-autofill {
   font-size: 16px;
   font-family: 'nunito-regular';
   font-weight: 700; }
-  .small.button-primary-bech, .small.button-secondary-bech, .small.button-accent-bech, .small.button-disable-bech {
+  .small.button-primary-bech, .small.button-secondary-bech, .small.button-accent-bech, .small.button-accent2-bech, .small.button-disable-bech, .small.button-disable2-bech {
     width: 48%;
     margin: 8px 1%;
     height: 34px;
@@ -415,7 +415,7 @@ select:-webkit-autofill {
     font-weight: 100;
     font-size: 13px;
     float: left; }
-  .center.button-primary-bech, .center.button-secondary-bech, .center.button-accent-bech, .center.button-disable-bech {
+  .center.button-primary-bech, .center.button-secondary-bech, .center.button-accent-bech, .center.button-accent2-bech, .center.button-disable-bech, .center.button-disable2-bech {
     margin: 8px auto;
     float: none; }
 
@@ -461,6 +461,20 @@ select:-webkit-autofill {
     background-size: 100%;
     transition: background 0s; }
 
+.button-accent2-bech {
+  background: none;
+  border: 2px solid #3E50B4;
+  color: #3E50B4; }
+  .button-accent2-bech:hover {
+    background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+    border: 2px solid #3E50B4;
+    text-decoration: none;
+    color: #3E50B4; }
+  .button-accent2-bech:active {
+    background-color: #7784CA;
+    background-size: 100%;
+    transition: background 0s; }
+
 .button-disable-bech {
   box-shadow: none;
   background: #E1E4E7;
@@ -471,13 +485,22 @@ select:-webkit-autofill {
     text-decoration: none;
     color: #A4AAB6; }
 
+.button-disable2-bech {
+  box-shadow: none;
+  background: none;
+  border: 2px solid #E1E4E7;
+  color: #E1E4E7; }
+  .button-disable2-bech:hover {
+    background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+    border: 2px solid #E1E4E7;
+    text-decoration: none;
+    color: #E1E4E7; }
+
 header {
   background: linear-gradient(to right, #FFA90A, #E86051);
   height: 56px;
   line-height: 52px;
   color: #ffffff;
-  font-family: 'nunito-light';
-  font-weight: 100;
   font-size: 18px;
   margin-bottom: 20px; }
 
@@ -485,5 +508,17 @@ header {
   font-size: 32px;
   line-height: 60px;
   text-align: center; }
+
+.alertabech {
+  background-color: rgba(62, 80, 180, 0.1) !important;
+  border: 1px solid rgba(62, 80, 180, 0.25);
+  color: #3E50B4;
+  font-family: 'nunito-light';
+  font-size: 14px;
+  margin: 20px 0; }
+
+body {
+  font-family: 'nunito-regular';
+  color: #3A3F4A; }
 
 /*# sourceMappingURL=main.css.map */

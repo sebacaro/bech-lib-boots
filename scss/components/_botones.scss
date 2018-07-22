@@ -41,6 +41,14 @@
     &:hover {background: $accent radial-gradient(circle, transparent 1%, $accent 1%) center/15000%; border: 2px solid $accent; text-decoration: none; color: #ffffff;}
     &:active {background-color: $accent2; background-size: 100%; transition: background 0s;}
 }
+.button-accent2-bech {
+    @extend %btn;
+    background: none;
+    border: 2px solid $accent;
+    color: $accent;
+    &:hover {background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%; border: 2px solid $accent; text-decoration: none; color: $accent;}
+    &:active {background-color: $accent2; background-size: 100%; transition: background 0s;}    
+}
 .button-disable-bech {
     @extend %btn;
     box-shadow:none;
@@ -48,4 +56,12 @@
     border: 2px solid $disabled;
     color: $text-disabled;
     &:hover {background: $disabled; text-decoration: none; color: $text-disabled}
+}
+.button-disable2-bech {
+    @extend %btn;
+    box-shadow:none;
+    background: none;
+    border: 2px solid $disabled;
+    color: $disabled;
+    &:hover {background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%; border: 2px solid $disabled; text-decoration: none; color: $disabled;}; 
 }
