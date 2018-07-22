@@ -26,12 +26,15 @@
 							<div class="col-7 col-sm-9 ">Este es el título</div>
 							<div class="col-3 col-sm-2 notificacion">
 								<i class="bech_mail"></i>
+								<div class="contenedor-numero">
+									<span>22</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
-			
+
 			<!-- fin header -->
 
 			<!-- spinner-->
@@ -251,23 +254,11 @@
 		<!-- comienzo dropdown -->
 		<div class="container">
 			<div class="row mt-3">
-				<div class="col-6">
+				<div class="col-12">
 					<p>
-						<a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque1" class="btn btn-primary">Bloque 1</a>
+						<a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque1" class="btn-lg btn-block button-primary-bech">Bloque 1</a>
 					</p>
 					<div class="collapse" id="bloque1">
-						<div class="card card-body">
-							<h2>Titulo</h2>
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aut facere earum, voluptatem dignissimos repellendus
-								deserunt consequatur quisquam dolor eligendi vel atque eius totam quidem odit ratione vitae. Labore, explicabo.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<p>
-						<a href="#bloque2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque2" class="btn btn-primary">Bloque 2</a>
-					</p>
-					<div class="collapse" id="bloque2">
 						<div class="card card-body">
 							<h2>Titulo</h2>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae aut facere earum, voluptatem dignissimos repellendus
@@ -281,16 +272,16 @@
 				<div class="col">
 					<div id="accordion">
 						<!-- CARD #1 -->
-						<div class="card">
-							<div class="card-header" id="heading1">
+						<div class="card card-bech">
+							<div class="card-header bech" id="heading1">
 								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+									<button class="btn btn-link collapsable-bech" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
 										Contenido #1
 									</button>
 								</h5>
 							</div>
 							<div id="collapse1" class="collapse show" arial-labelledby="heading1" data-parent="#accordion">
-								<div class="card-body">
+								<div class="card-body body-bech">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores
 									earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
 								</div>
@@ -298,16 +289,16 @@
 						</div>
 
 						<!-- CARD #2 -->
-						<div class="card">
-							<div class="card-header" id="heading2">
+						<div class="card card-bech">
+							<div class="card-header bech" id="heading2">
 								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+									<button class="btn btn-link collapsable-bech" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
 										Contenido #2
 									</button>
 								</h5>
 							</div>
 							<div id="collapse2" class="collapse" arial-labelledby="heading2" data-parent="#accordion">
-								<div class="card-body">
+								<div class="card-body body-bech">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores
 									earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
 								</div>
@@ -315,16 +306,16 @@
 						</div>
 
 						<!-- CARD #3 -->
-						<div class="card">
-							<div class="card-header" id="heading3">
+						<div class="card card-bech">
+							<div class="card-header bech" id="heading3">
 								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+									<button class="btn btn-link collapsable-bech" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
 										Contenido #3
 									</button>
 								</h5>
 							</div>
 							<div id="collapse3" class="collapse" arial-labelledby="heading3" data-parent="#accordion">
-								<div class="card-body">
+								<div class="card-body body-bech">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad molestias, alias omnis nostrum corrupti, sit aliquid ut maiores
 									earum corporis dolore pariatur temporibus similique deleniti eius nihil laboriosam ab ipsam!
 								</div>
@@ -335,10 +326,6 @@
 			</div>
 		</div>
 		<!-- fin dropbopx -->
-
-		<!-- swipper-->
-			
-		<!--fin swipper-->
 
 		<!-- comienzo dropdown -->
 		<div class="container">
@@ -414,25 +401,6 @@
 			</div>
 		</div>
 		<!-- fin badget -->
-
-		<!-- comienzo popover -->
-		<div class="container">
-			<div class="row mt-5">
-				<div class="col">
-					<h2>Popovers</h2>
-					<hr>
-					<button class="btn btn-primary" data-container="body" data-placement="top" data-toggle="popover" title="Titulo del popover"
-					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Arriba</button>
-					<button class="btn btn-primary" data-container="body" data-placement="bottom" data-toggle="popover" title="Titulo del popover"
-					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Abajo</button>
-					<button class="btn btn-primary" data-container="body" data-placement="left" data-toggle="popover" title="Titulo del popover"
-					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Izquierda</button>
-					<button class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover" title="Titulo del popover"
-					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Derecha</button>
-				</div>
-			</div>
-		</div>
-		<!-- fin popover -->
 
 		<br>
 
