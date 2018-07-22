@@ -16,7 +16,7 @@ header {
     line-height: 60px;
     text-align: center;
     .contenedor-numero {
-        margin-left:38px;
+        margin-left:31px;
         span {
             background-color: $accent;
             color: #ffffff;
@@ -26,7 +26,7 @@ header {
             padding: 3px;
             font-size: 10px;
             z-index: 50000;
-            font-family:'nunito-light';
+            font-family:$light;
             margin: -50px auto;
             display:block;
             line-height: 13px;

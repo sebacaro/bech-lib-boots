@@ -34,8 +34,8 @@
 .bech {
   height: 40px;
   padding: 0px;
-  background-color: none;
-  border-bottom: 2px solid #FF9100; }
+  background-color: #ffffff;
+  border-bottom: 2px solid #FFBD65; }
   .bech .collapsable-bech {
     width: 100%;
     height: 40px;
@@ -44,16 +44,25 @@
     text-decoration: none;
     color: #3A3F4A;
     border: none;
-    font-family: 'nunito-light';
+    font-family: "nunito-light";
     border: none; }
+  .bech .texto-titulo {
+    width: 90%;
+    float: left; }
+  .bech .flecha {
+    float: left;
+    width: 10%;
+    text-align: right;
+    font-size: 20px;
+    color: #FF9100; }
 
 .body-bech {
-  border: none; }
+  border: none;
+  background-color: #F6F7F8; }
 
 .card-bech {
   border: none;
-  margin: 2px 0;
-  background-color: none; }
+  margin: 2px 0; }
 
 .checkbox {
   position: relative;
@@ -538,7 +547,7 @@ header {
   line-height: 60px;
   text-align: center; }
   .notificacion .contenedor-numero {
-    margin-left: 38px; }
+    margin-left: 31px; }
     .notificacion .contenedor-numero span {
       background-color: #3E50B4;
       color: #ffffff;
@@ -548,7 +557,7 @@ header {
       padding: 3px;
       font-size: 10px;
       z-index: 50000;
-      font-family: 'nunito-light';
+      font-family: "nunito-light";
       margin: -50px auto;
       display: block;
       line-height: 13px;
