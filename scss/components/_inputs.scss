@@ -3,7 +3,7 @@ select ~ :after {
     display: none;
   }
   
-  .web-kit-input-label {
+  .bech-input-label {
     &.web-kit-select {
       position: relative;
   
@@ -41,7 +41,7 @@ select ~ :after {
     }
   }
   
-  .web-kit-input-label {
+  .bech-input-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;

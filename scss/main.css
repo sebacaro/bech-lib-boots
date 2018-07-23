@@ -177,67 +177,68 @@ section {
   section h1 {
     margin: 0 0 2em; }
 
-.web-kit-modal__icono {
+.bech-modal__contenido {
+  border-radius: 6px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.18), 0 0 8px 2px rgba(0, 0, 0, 0.08); }
+.bech-modal__dialogo {
+  margin: 1.5rem; }
+.bech-modal__icono {
   padding-bottom: 24px;
   text-align: center;
-  width: 54px;
-  height: 54px;
   margin: 0 auto; }
-  .web-kit-modal__icono img {
+  .bech-modal__icono img {
     width: 64px;
     height: 64px; }
-.web-kit-modal__titulo {
+.bech-modal__titulo {
   text-align: center;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
   margin-bottom: 16px; }
-.web-kit-modal__texto {
+.bech-modal__texto {
   text-align: center;
   line-height: 20px;
   font-size: 14px;
   color: #868c99;
   margin-bottom: 16px; }
-.web-kit-modal a.button--link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none; }
-.web-kit-modal__button {
-  font-size: 16px;
-  background: #FF9100;
-  height: 44px;
-  color: #fff;
-  text-align: center;
-  border-radius: 100px;
-  border: 0;
-  display: block;
-  width: 100%;
-  font-weight: 700;
-  margin-top: 24px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1); }
 
-.mat-dialog-container {
-  border-radius: 6px !important;
-  padding-bottom: 40px; }
+.popover {
+  border-color: #FFBD65; }
+
+.popover-header {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-bottom: none;
+  margin-bottom: 0; }
+
+.popover-body {
+  line-height: 20px;
+  font-size: 14px;
+  color: #868c99;
+  margin-bottom: 5px;
+  border-color: #FFBD65; }
 
 select ~ :after {
   display: none; }
 
-.web-kit-input-label.web-kit-select {
+.bech-input-label.web-kit-select {
   position: relative; }
-  .web-kit-input-label.web-kit-select.disabled {
+  .bech-input-label.web-kit-select.disabled {
     pointer-events: none; }
-    .web-kit-input-label.web-kit-select.disabled select {
+    .bech-input-label.web-kit-select.disabled select {
       color: #868c99;
       font-weight: 400;
       background: #f7f7f7; }
-    .web-kit-input-label.web-kit-select.disabled:after {
+    .bech-input-label.web-kit-select.disabled:after {
       opacity: 0.6; }
-  .web-kit-input-label.web-kit-select select {
+  .bech-input-label.web-kit-select select {
     appearance: none;
     padding-right: 32px; }
-  .web-kit-input-label.web-kit-select:after {
+  .bech-input-label.web-kit-select:after {
     content: "\e952";
     width: 24px;
     background-size: contain;
@@ -249,30 +250,30 @@ select ~ :after {
     margin-right: 8px;
     pointer-events: none; }
 
-.web-kit-input-label {
+.bech-input-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
   position: relative; }
-  .web-kit-input-label label {
+  .bech-input-label label {
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 8px;
     font-weight: 700;
     color: #3a3f4a;
     transition: 0.25s ease-in-out; }
-  .web-kit-input-label:focus-within label {
+  .bech-input-label:focus-within label {
     color: #FF9100; }
-  .web-kit-input-label.input-prefix .prefix {
+  .bech-input-label.input-prefix .prefix {
     position: absolute;
     top: 32px;
     left: 16px;
     font-weight: 700; }
-  .web-kit-input-label.input-prefix input {
+  .bech-input-label.input-prefix input {
     padding-left: 62px; }
-  .web-kit-input-label input,
-  .web-kit-input-label select,
-  .web-kit-input-label textarea {
+  .bech-input-label input,
+  .bech-input-label select,
+  .bech-input-label textarea {
     border-radius: 4px;
     background-color: #ffffff;
     border: solid 1px #a4aab6;
@@ -283,52 +284,52 @@ select ~ :after {
     transition: 0.25s ease-in-out;
     color: #3a3f4a;
     -webkit-appearance: none; }
-    .web-kit-input-label input::placeholder,
-    .web-kit-input-label select::placeholder,
-    .web-kit-input-label textarea::placeholder {
+    .bech-input-label input::placeholder,
+    .bech-input-label select::placeholder,
+    .bech-input-label textarea::placeholder {
       color: #868c99;
       font-weight: 400; }
-    .web-kit-input-label input:active,
-    .web-kit-input-label select:active,
-    .web-kit-input-label textarea:active {
+    .bech-input-label input:active,
+    .bech-input-label select:active,
+    .bech-input-label textarea:active {
       border: solid 1px #FF9100;
       color: #3a3f4a; }
-    .web-kit-input-label input:focus,
-    .web-kit-input-label select:focus,
-    .web-kit-input-label textarea:focus {
+    .bech-input-label input:focus,
+    .bech-input-label select:focus,
+    .bech-input-label textarea:focus {
       outline: 0;
       border: solid 1px #FF9100;
       color: #3a3f4a; }
-    .web-kit-input-label input:focus + label,
-    .web-kit-input-label select:focus + label,
-    .web-kit-input-label textarea:focus + label {
+    .bech-input-label input:focus + label,
+    .bech-input-label select:focus + label,
+    .bech-input-label textarea:focus + label {
       color: #cc0000 !important; }
-    .web-kit-input-label input:disabled,
-    .web-kit-input-label select:disabled,
-    .web-kit-input-label textarea:disabled {
+    .bech-input-label input:disabled,
+    .bech-input-label select:disabled,
+    .bech-input-label textarea:disabled {
       color: #868c99;
       font-weight: 400; }
-      .web-kit-input-label input:disabled:after,
-      .web-kit-input-label select:disabled:after,
-      .web-kit-input-label textarea:disabled:after {
+      .bech-input-label input:disabled:after,
+      .bech-input-label select:disabled:after,
+      .bech-input-label textarea:disabled:after {
         display: none; }
-  .web-kit-input-label .info-text {
+  .bech-input-label .info-text {
     font-size: 12px;
     line-height: 16px;
     margin-top: 4px;
     color: #868c99;
     font-weight: 600; }
-    .web-kit-input-label .info-text:empty {
+    .bech-input-label .info-text:empty {
       margin: 0; }
-    .web-kit-input-label .info-text--error {
+    .bech-input-label .info-text--error {
       color: #D13C3C; }
-  .web-kit-input-label .MsjeError {
+  .bech-input-label .MsjeError {
     font-size: 12px;
     line-height: 16px;
     margin-top: 4px;
     color: #D13C3C;
     font-weight: 600; }
-    .web-kit-input-label .MsjeError:empty {
+    .bech-input-label .MsjeError:empty {
       margin: 0; }
 
 input.ng-invalid.ng-dirty.ng-invalid.ng-touched {
@@ -426,5 +427,14 @@ select:-webkit-autofill {
     background: #E1E4E7;
     text-decoration: none;
     color: #A4AAB6; }
+
+.bech-table__activo {
+  background-color: #FF9100;
+  color: #ffffff; }
+.bech-table__success {
+  background-color: #20D4A4;
+  color: #ffffff; }
+.bech-table__hover {
+  background-color: aqua; }
 
 /*# sourceMappingURL=main.css.map */

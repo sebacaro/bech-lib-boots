@@ -1,0 +1,15 @@
+.bech-table {
+    &__activo {
+      background-color: $bech_color;
+      color: #ffffff;
+    }
+
+    &__success {
+      background-color: $success;
+      color: #ffffff;
+    }
+  
+    &__hover {
+      background-color: aqua;
+    }
+  }
