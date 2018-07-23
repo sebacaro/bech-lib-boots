@@ -1,50 +1,36 @@
 // LOADING
-app-loading {
-    background: rgba(255, 255, 255, 0.9);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    animation: myChange .25s ease-in-out;
-  
-    .loading_content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      flex-direction: column;
-  
-      .loading_text {
-        font-size: 14px;
-        font-weight: 600;
-        color: $font_color_light;
-        padding: 16px;
-      }
-  
-      mat-spinner.small_spinner {
-        width: 48px;
-        height: 48px;
-  
-        svg {
-          width: 48px;
-          height: 48px;
-  
-          circle {
-            stroke-width: 12% !important;
-          }
-        }
-      }
-    }
+  .spinner,.spinner:after{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ }
+.spinner {
+    background-color: transparent;
+    border-top: 5px solid rgba( $bech_color, 1.0 );
+    border-right: 5px solid rgba( $bech_color, 1.0 );
+    border-bottom: 5px solid rgba( $bech_color, 1.0 );
+    border-left: 5px solid rgba( $bech_color, .0 );
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: .8s;
+    animation-name: spinner-loading;
+    margin: 0 auto;
+    text-align: center;
+ }
+@keyframes spinner-loading{
+  0% {
+      transform: rotate(0deg)
+  } to {
+      transform: rotate(1turn)
   }
-  
-  @keyframes myChange {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
+}
+.texto-bajada-spinner {
+  text-align: center;
+  color: $font_color_primary;
+  margin: 15px 0;
+  font-family: 'nunito-regular';
+  font-weight: 100;
+  font-size:14px;
+  color: $spinner;
+}

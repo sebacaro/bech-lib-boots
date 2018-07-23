@@ -1,0 +1,65 @@
+//extend
+%puntos {
+    width: 10px;
+    height:10px;
+    border: 1px solid $border;
+    border-radius:50%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    &.active {
+        background-color: $accent;
+        border: 1px solid $accent;
+        animation-duration: .4s;
+        animation-name: destacado;
+    }
+    &.past {
+        background-color: $border;
+        border: 1px solid $border;
+    }           
+}
+//steps
+.steps {
+    border-bottom: 1px solid $border;
+    height:5px;
+    width: 100%;
+    margin: 10px 0 20px;
+    .stp3 {
+        width:33.3%;
+        height: 10px;
+        float:left;
+        .point {
+            @extend %puntos; 
+        }
+    }
+    .stp4 {
+        width:25%;
+        height: 10px;
+        float:left;
+        .point {
+            @extend %puntos; 
+        }
+    }
+    .stp5 {
+        width:20%;
+        height: 10px;
+        float:left;
+        .point {
+            @extend %puntos; 
+        }
+    }   
+}
+@keyframes destacado {
+    from {
+      background-color: rgba( $accent, .0);
+      width: 40px;
+      height: 40px;
+      margin-top: -18px;
+      border: none;
+    }
+  
+    to {
+      background-color: $accent;
+      width: 10px;
+      height: 10px;
+    }
+  }

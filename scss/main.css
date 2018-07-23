@@ -1,37 +1,69 @@
-app-loading {
-  background: rgba(255, 255, 255, 0.9);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  animation: myChange .25s ease-in-out; }
-  app-loading .loading_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    flex-direction: column; }
-    app-loading .loading_content .loading_text {
-      font-size: 14px;
-      font-weight: 600;
-      color: #868c99;
-      padding: 16px; }
-    app-loading .loading_content mat-spinner.small_spinner {
-      width: 48px;
-      height: 48px; }
-      app-loading .loading_content mat-spinner.small_spinner svg {
-        width: 48px;
-        height: 48px; }
-        app-loading .loading_content mat-spinner.small_spinner svg circle {
-          stroke-width: 12% !important; }
+.spinner, .spinner:after {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; }
 
-@keyframes myChange {
-  from {
-    opacity: 0; }
+.spinner {
+  background-color: transparent;
+  border-top: 5px solid #ff9100;
+  border-right: 5px solid #ff9100;
+  border-bottom: 5px solid #ff9100;
+  border-left: 5px solid rgba(255, 145, 0, 0);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: .8s;
+  animation-name: spinner-loading;
+  margin: 0 auto;
+  text-align: center; }
+
+@keyframes spinner-loading {
+  0% {
+    transform: rotate(0deg); }
   to {
-    opacity: 1; } }
+    transform: rotate(1turn); } }
+.texto-bajada-spinner {
+  text-align: center;
+  color: #3A3F4A;
+  margin: 15px 0;
+  font-family: 'nunito-regular';
+  font-weight: 100;
+  font-size: 14px;
+  color: #868C99; }
+
+.bech {
+  height: 40px;
+  padding: 0px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #FFBD65; }
+  .bech .collapsable-bech {
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    margin: 0px;
+    text-decoration: none;
+    color: #3A3F4A;
+    border: none;
+    font-family: "nunito-light";
+    border: none; }
+  .bech .texto-titulo {
+    width: 90%;
+    float: left; }
+  .bech .flecha {
+    float: left;
+    width: 10%;
+    text-align: right;
+    font-size: 20px;
+    color: #FF9100; }
+
+.body-bech {
+  border: none;
+  background-color: #F6F7F8; }
+
+.card-bech {
+  border: none;
+  margin: 2px 0; }
+
 .checkbox {
   position: relative;
   display: inline-block;
@@ -222,6 +254,51 @@ section {
   margin-bottom: 5px;
   border-color: #FFBD65; }
 
+.steps .stp3 .point, .steps .stp4 .point, .steps .stp5 .point {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #C3C7CE;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 auto; }
+  .steps .stp3 .active.point, .steps .stp4 .active.point, .steps .stp5 .active.point {
+    background-color: #3E50B4;
+    border: 1px solid #3E50B4;
+    animation-duration: .4s;
+    animation-name: destacado; }
+  .steps .stp3 .past.point, .steps .stp4 .past.point, .steps .stp5 .past.point {
+    background-color: #C3C7CE;
+    border: 1px solid #C3C7CE; }
+
+.steps {
+  border-bottom: 1px solid #C3C7CE;
+  height: 5px;
+  width: 100%;
+  margin: 10px 0 20px; }
+  .steps .stp3 {
+    width: 33.3%;
+    height: 10px;
+    float: left; }
+  .steps .stp4 {
+    width: 25%;
+    height: 10px;
+    float: left; }
+  .steps .stp5 {
+    width: 20%;
+    height: 10px;
+    float: left; }
+
+@keyframes destacado {
+  from {
+    background-color: rgba(62, 80, 180, 0);
+    width: 40px;
+    height: 40px;
+    margin-top: -18px;
+    border: none; }
+  to {
+    background-color: #3E50B4;
+    width: 10px;
+    height: 10px; } }
 select ~ :after {
   display: none; }
 
@@ -351,7 +428,7 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset !important; }
 
-.button-primary-bech, .button-secondary-bech, .button-accent-bech, .button-disable-bech {
+.button-primary-bech, .button-secondary-bech, .button-accent-bech, .button-accent2-bech, .button-disable-bech, .button-disable2-bech {
   border-radius: 40px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   background-position: center;
@@ -364,7 +441,7 @@ select:-webkit-autofill {
   font-size: 16px;
   font-family: 'nunito-regular';
   font-weight: 700; }
-  .small.button-primary-bech, .small.button-secondary-bech, .small.button-accent-bech, .small.button-disable-bech {
+  .small.button-primary-bech, .small.button-secondary-bech, .small.button-accent-bech, .small.button-accent2-bech, .small.button-disable-bech, .small.button-disable2-bech {
     width: 48%;
     margin: 8px 1%;
     height: 34px;
@@ -372,7 +449,7 @@ select:-webkit-autofill {
     font-weight: 100;
     font-size: 13px;
     float: left; }
-  .center.button-primary-bech, .center.button-secondary-bech, .center.button-accent-bech, .center.button-disable-bech {
+  .center.button-primary-bech, .center.button-secondary-bech, .center.button-accent-bech, .center.button-accent2-bech, .center.button-disable-bech, .center.button-disable2-bech {
     margin: 8px auto;
     float: none; }
 
@@ -418,6 +495,20 @@ select:-webkit-autofill {
     background-size: 100%;
     transition: background 0s; }
 
+.button-accent2-bech {
+  background: none;
+  border: 2px solid #3E50B4;
+  color: #3E50B4; }
+  .button-accent2-bech:hover {
+    background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+    border: 2px solid #3E50B4;
+    text-decoration: none;
+    color: #3E50B4; }
+  .button-accent2-bech:active {
+    background-color: #7784CA;
+    background-size: 100%;
+    transition: background 0s; }
+
 .button-disable-bech {
   box-shadow: none;
   background: #E1E4E7;
@@ -428,6 +519,7 @@ select:-webkit-autofill {
     text-decoration: none;
     color: #A4AAB6; }
 
+<<<<<<< HEAD
 .bech-table__activo {
   background-color: #FF9100;
   color: #ffffff; }
@@ -436,5 +528,63 @@ select:-webkit-autofill {
   color: #ffffff; }
 .bech-table__hover {
   background-color: aqua; }
+=======
+.button-disable2-bech {
+  box-shadow: none;
+  background: none;
+  border: 2px solid #E1E4E7;
+  color: #E1E4E7; }
+  .button-disable2-bech:hover {
+    background: #FFFFFF radial-gradient(circle, transparent 1%, #FFFFFF 1%) center/15000%;
+    border: 2px solid #E1E4E7;
+    text-decoration: none;
+    color: #E1E4E7; }
+
+header {
+  background: linear-gradient(to right, #FFA90A, #E86051);
+  height: 56px;
+  line-height: 55px;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px; }
+
+.volver {
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center; }
+
+.notificacion {
+  font-size: 27px;
+  line-height: 60px;
+  text-align: center; }
+  .notificacion .contenedor-numero {
+    margin-left: 31px; }
+    .notificacion .contenedor-numero span {
+      background-color: #3E50B4;
+      color: #ffffff;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      padding: 3px;
+      font-size: 10px;
+      z-index: 50000;
+      font-family: "nunito-light";
+      margin: -50px auto;
+      display: block;
+      line-height: 13px;
+      text-align: center; }
+
+.alertabech {
+  background-color: rgba(62, 80, 180, 0.1) !important;
+  border: 1px solid rgba(62, 80, 180, 0.25);
+  color: #3E50B4;
+  font-family: 'nunito-light';
+  font-size: 14px;
+  margin: 20px 0; }
+
+body {
+  font-family: 'nunito-regular';
+  color: #3A3F4A; }
+>>>>>>> 8801a2c15b86adca8164da7a92d43e1a519cf6b6
 
 /*# sourceMappingURL=main.css.map */
