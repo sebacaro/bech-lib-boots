@@ -8,8 +8,8 @@
       background-color: $success;
       color: #ffffff;
     }
-  
-    &__hover {
-      background-color: aqua;
-    }
+  }
+
+  .table-hover {
+    background-color: $bech_color;
   }
