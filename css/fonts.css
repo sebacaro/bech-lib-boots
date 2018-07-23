@@ -1,44 +1,44 @@
 /* FONT NUNITO */
 @font-face {
-  font-family: "Nunito-Light";
+  font-family: "nunito-light";
   src: url("../fonts/nunito/Nunito-Light.eot"); /* IE9 Compat Modes */
   src: url("../fonts/nunito/Nunito-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/nunito/Nunito-Light.svg") format("svg"), /* Legacy iOS */
     url(".../fonts/nunito/Nunito-Light.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/nunito/Nunito-Light.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nunito/Nunito-Light.woff") format("woff"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Nunito-Regular";
+  font-family: "nunito-regular";
   src: url("../fonts/nunito/Nunito-Regular.eot"); /* IE9 Compat Modes */
   src: url("../fonts/nunito/Nunito-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/nunito/Nunito-Regular.svg") format("svg"), /* Legacy iOS */
     url(".../fonts/nunito/Nunito-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/nunito/Nunito-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nunito/Nunito-Regular.woff") format("woff"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Nunito-SemiBold";
+  font-family: "nunito-semi";
   src: url("../fonts/nunito/Nunito-SemiBold.eot"); /* IE9 Compat Modes */
   src: url("../fonts/nunito/Nunito-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/nunito/Nunito-SemiBold.svg") format("svg"), /* Legacy iOS */
     url(".../fonts/nunito/Nunito-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/nunito/Nunito-SemiBold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nunito/Nunito-SemiBold.woff") format("woff"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Nunito-Bold";
+  font-family: "nunito-bold";
   src: url("../fonts/nunito/Nunito-Bold.eot"); /* IE9 Compat Modes */
   src: url("../fonts/nunito/Nunito-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/nunito/Nunito-Bold.svg") format("svg"), /* Legacy iOS */
     url(".../fonts/nunito/Nunito-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("../fonts/nunito/Nunito-Bold.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/nunito/Nunito-Bold.woff") format("woff"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }

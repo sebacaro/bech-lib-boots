@@ -44,7 +44,7 @@
     text-decoration: none;
     color: #3A3F4A;
     border: none;
-    font-family: "Nunito-Light";
+    font-family: "nunito-light";
     border: none; }
   .bech .texto-titulo {
     width: 90%;
@@ -568,7 +568,7 @@ header {
       padding: 3px;
       font-size: 10px;
       z-index: 50000;
-      font-family: "Nunito-Light";
+      font-family: "nunito-light";
       margin: -50px auto;
       display: block;
       line-height: 13px;
