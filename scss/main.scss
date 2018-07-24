@@ -12,8 +12,33 @@
 @import "components/_header";
 @import "components/_cards";
 
+html {   
+    font-size: 14px;
+}
 body {
-    font-family: 'nunito-regular' !important;
-    font-size: 16px;
+    font-size: 1rem;
+    font-family: $regular;
     color: $font_color_primary;
+}
+/* etiquetas H para titulos */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+/* parrafos */
+
+p {
+    font-size: 1rem;
 }
