@@ -537,9 +537,6 @@ select:-webkit-autofill {
   background-color: #20D4A4;
   color: #ffffff; }
 
-.table-hover {
-  background-color: #FF9100; }
-
 header {
   background: linear-gradient(to right, #FFA90A, #E86051);
   height: 56px;
