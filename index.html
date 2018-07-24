@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/fonts.css">
 
 
-
 	<body>
 		<!-- comienzo alertas -->
 		<div class="container">
@@ -225,6 +224,7 @@
 					</div>
 				</div>
 				<div class="col-12">
+					<br>
 					<div class="card">
 						<div class="card-body text-center">
 							<h3 class="card-title">Lorem ipsum dolor.</h3>
@@ -274,6 +274,19 @@
 			</div>
 		</div>
 		<!-- fin slide -->
+
+		<!-- slide 2-->
+		<div class="container">
+			<!-- Flickity HTML init -->
+			<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+				<div class="gallery-cell"></div>
+				<div class="gallery-cell"></div>
+				<div class="gallery-cell"></div>
+				<div class="gallery-cell"></div>
+				<div class="gallery-cell"></div>
+			</div>
+		</div>
+		<!-- fin slide 2 -->
 
 		<!-- comienzo dropdown -->
 		<div class="container">
@@ -359,81 +372,6 @@
 			</div>
 		</div>
 		<!-- fin dropbopx -->
-
-		<!-- comienzo dropdown -->
-		<div class="container">
-			<div class="row mt-3">
-				<div class="col-6">
-					<div class="btn-group mr-2 mb-2">
-						<button class="btn btn-primary dropdown-toggle" id="dp-categorias" data-toggle="dropdown">Categorias</button>
-						<div class="dropdown-menu" aria-labelledby="dp-categorias">
-							<h6 class="dropdown-header">Categorias</h6>
-							<a href="#" class="dropdown-item">HTML</a>
-							<a href="#" class="dropdown-item">CSS</a>
-							<a href="#" class="dropdown-item">JS</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">Bootstrap</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-3">
-				<div class="col-6">
-					<div class="btn-group dropup mr-2 mb-2">
-						<button class="btn btn-primary btn-lg dropdown-toggle" id="dp-categorias" data-toggle="dropdown">Categorias</button>
-						<div class="dropdown-menu" aria-labelledby="dp-categorias">
-							<h6 class="dropdown-header">Categorias</h6>
-							<a href="#" class="dropdown-item">HTML</a>
-							<a href="#" class="dropdown-item">CSS</a>
-							<a href="#" class="dropdown-item">JS</a>
-							<div class="dropdown-divider"></div>
-							<a href="#" class="dropdown-item">Bootstrap</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-3">
-				<div class="col">
-					<div class="dropdown">
-						<button class="btn btn-success dropdown-toggle" type="button" id="dp-categorias1" data-toggle="dropdown">
-							Boton
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dp-categorias1">
-							<button class="dropdown-item" type="button">Boton 1</button>
-							<button class="dropdown-item" type="button">Boton 2</button>
-							<button class="dropdown-item" type="button">Boton 3</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- fin dropbox -->
-
-		<!-- comienzo badget -->
-		<div class="container">
-			<div class="row">
-				<div class="col-12 mb-3">
-					<div class="col-12 mb-3">
-						<a href="#" class="badge badge-pill badge-primary">Primary</a>
-					</div>
-					<button class="btn  mb-2">
-						Notificaciones
-						<span class="badge badge-dark">10</span>
-					</button>
-					<button class="btn btn-dark mb-2">
-						Notificaciones
-						<span class="badge badge-light">10</span>
-					</button>
-					<button class="btn btn-primary mb-2">
-						Notificaciones
-						<span class="badge badge-light">10</span>
-					</button>
-				</div>
-			</div>
-		</div>
-		<!-- fin badget -->
 
 		<br>
 
@@ -625,6 +563,7 @@
 				$('[data-toggle="popover"]').popover();
 			})
 		</script>
+		<script src="js/swipper/flickity-docs.min.js?2"></script>
 
 	</body>
 
