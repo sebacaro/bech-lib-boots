@@ -1,3 +1,4 @@
+// CAJAS DE ALERTA
 .alertabech {
     background-color: rgba( $accent, .1) !important;
     border: 1px solid rgba( $accent, .25);
@@ -5,4 +6,21 @@
     font-family: 'nunito-light';
     font-size: 14px;
     margin: 20px 0;
+}
+
+// CARD PERSONALIZADA HOME
+.card {
+    .full {
+        font-size: 3.5em;
+        color: #dddddd;
+        text-align: center;
+    }
+    &.quitar-borde {
+        border: none; 
+    }
+    .card-body {
+        &.sin-padding {
+            padding: 1.25rem 0px;
+        }
+    }   
 }
