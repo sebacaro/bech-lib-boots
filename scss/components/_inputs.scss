@@ -4,14 +4,14 @@ select ~ :after {
   }
   
   .bech-input-label {
-    &.web-kit-select {
+    &.bech-select {
       position: relative;
   
       &.disabled {
         pointer-events: none;
   
         select {
-          color: $font_color_light;
+          color: $font_color2;
           font-weight: 400;
           background: #f7f7f7;;
         }
@@ -27,14 +27,18 @@ select ~ :after {
       }
   
       &:after {
-        content: "\e952";
+        font-family: 'BECH';
+        content: "\e966";
+        color: $bech_color;
+        float:right;
+        font-size:32px;
+        font-weight:800;
         width: 24px;
-        background-size: contain;
+        height: 24px;
         display: block;
         position: absolute;
-        height: 24px;
         right: 0;
-        top: 32px;
+        top: 22px;
         margin-right: 8px;
         pointer-events: none;
       }
@@ -88,7 +92,7 @@ select ~ :after {
       -webkit-appearance: none;
   
       &::placeholder {
-        color: $font_color_light;
+        color: $font_color2;
         font-weight: 400;
       }
   
@@ -108,7 +112,7 @@ select ~ :after {
       }
   
       &:disabled {
-        color: $font_color_light;
+        //color: $font_color_light;
         font-weight: 400;
   
         &:after {
@@ -121,7 +125,7 @@ select ~ :after {
       font-size: 12px;
       line-height: 16px;
       margin-top: 4px;
-      color: $font_color_light;
+      color: $font_color2;
       font-weight: 600;
   
       &:empty {

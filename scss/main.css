@@ -1,3 +1,7 @@
+/* $spinner */
+/* success */
+/* $border-invalid */
+/* border_color */
 /* Document
    ========================================================================== */
 /**
@@ -8,25 +12,10 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  font-size: 14px; }
 
 /* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* Grouping content
    ========================================================================== */
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -47,7 +36,7 @@ hr {
 pre {
   font-family: monospace, monospace;
   /* 1 */
-  font-size: 1em;
+  font-size: 1rem;
   /* 2 */ }
 
 /* Text-level semantics
@@ -86,7 +75,7 @@ kbd,
 samp {
   font-family: monospace, monospace;
   /* 1 */
-  font-size: 1em;
+  font-size: 1rem;
   /* 2 */ }
 
 /**
@@ -107,10 +96,10 @@ sup {
   vertical-align: baseline; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25rem; }
 
 sup {
-  top: -0.5em; }
+  top: -0.5rem; }
 
 /* Embedded content
    ========================================================================== */
@@ -190,7 +179,7 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 fieldset {
-  padding: 0.35em 0.75em 0.625em; }
+  padding: 0.35rem 0.75rem 0.625rem; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -296,6 +285,58 @@ template {
 [hidden] {
   display: none; }
 
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: #2C3038;
+  font-family: Nunito Sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  background: #ffffff; }
+
+p {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.8rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+h4 {
+  font-size: 1.4rem; }
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../scss/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../scss/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../scss/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../scss/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("../scss/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
 .spinner, .spinner:after {
   display: block;
   width: 50px;
@@ -322,45 +363,41 @@ template {
     transform: rotate(1turn); } }
 .texto-bajada-spinner {
   text-align: center;
-  color: #3A3F4A;
+  color: #2C3038;
   margin: 15px 0;
-  font-family: 'nunito-regular';
   font-weight: 100;
-  font-size: 14px;
-  color: #868C99; }
+  font-size: 14px; }
 
 .bech {
-  height: 40px;
-  padding: 0px;
+  height: 48px;
   background-color: #ffffff;
-  border-bottom: 2px solid #FFBD65; }
-  .bech .collapsable-bech {
-    width: 100%;
-    height: 40px;
-    text-align: left;
-    margin: 0px;
-    text-decoration: none;
-    color: #3A3F4A;
-    border: none;
-    font-family: "nunito-light";
-    border: none; }
+  border-bottom: none;
+  box-shadow: inset 0 -1px 0 0 #E1E4E7; }
   .bech .texto-titulo {
-    width: 90%;
-    float: left; }
-  .bech .flecha {
-    float: left;
-    width: 10%;
-    text-align: right;
-    font-size: 20px;
-    color: #FF9100; }
+    color: #2C3038;
+    font-weight: 700; }
+  .bech a {
+    text-decoration: none; }
 
-.body-bech {
+.bech-card {
   border: none;
-  background-color: #F6F7F8; }
+  margin-bottom: 20px;
+  box-shadow: inset 0 -1px 0 0 #E1E4E7; }
 
-.card-bech {
-  border: none;
-  margin: 2px 0; }
+.bech-title a:after {
+  font-family: 'BECH';
+  content: "\e969";
+  float: right;
+  font-size: 32px;
+  font-weight: 800;
+  color: #FF9100;
+  margin-top: -28px; }
+
+.bech-title a.collapsed:after {
+  font-family: 'BECH';
+  content: "\e966";
+  color: #FF9100;
+  box-shadow: none; }
 
 .checkbox {
   position: relative;
@@ -529,7 +566,7 @@ section {
   text-align: center;
   line-height: 20px;
   font-size: 14px;
-  color: #868c99;
+  color: #868C99;
   margin-bottom: 16px; }
 
 .steps .stp3 .point, .steps .stp4 .point, .steps .stp5 .point {
@@ -539,7 +576,7 @@ section {
   border-radius: 50%;
   background-color: #C3C7CE;
   font-size: 10px;
-  font-family: "nunito-light";
+  font-weight: 100;
   text-align: center;
   margin: 0 auto;
   color: #868C99; }
@@ -550,8 +587,8 @@ section {
     animation-name: destacado;
     color: #ffffff; }
   .steps .stp3 .past.point, .steps .stp4 .past.point, .steps .stp5 .past.point {
-    background-color: #20D4A4;
-    border: 1px solid #20D4A4;
+    background-color: #06C790;
+    border: 1px solid #06C790;
     line-height: 0px;
     font-size: 13px;
     color: #ffffff; }
@@ -609,7 +646,7 @@ section {
 .popover-body {
   line-height: 20px;
   font-size: 14px;
-  color: #868c99;
+  color: #868C99;
   margin-bottom: 5px;
   border-color: #FFBD65; }
 
@@ -719,7 +756,7 @@ body {
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background: #3f51b5;
+  background: #3E50B4;
   counter-increment: gallery-cell;
   border-radius: 5px;
   box-shadow: 0px 3px 6px #868C99; }
@@ -736,28 +773,32 @@ body {
 select ~ :after {
   display: none; }
 
-.bech-input-label.web-kit-select {
+.bech-input-label.bech-select {
   position: relative; }
-  .bech-input-label.web-kit-select.disabled {
+  .bech-input-label.bech-select.disabled {
     pointer-events: none; }
-    .bech-input-label.web-kit-select.disabled select {
-      color: #868c99;
+    .bech-input-label.bech-select.disabled select {
+      color: #868C99;
       font-weight: 400;
       background: #f7f7f7; }
-    .bech-input-label.web-kit-select.disabled:after {
+    .bech-input-label.bech-select.disabled:after {
       opacity: 0.6; }
-  .bech-input-label.web-kit-select select {
+  .bech-input-label.bech-select select {
     appearance: none;
     padding-right: 32px; }
-  .bech-input-label.web-kit-select:after {
-    content: "\e952";
+  .bech-input-label.bech-select:after {
+    font-family: 'BECH';
+    content: "\e966";
+    color: #FF9100;
+    float: right;
+    font-size: 32px;
+    font-weight: 800;
     width: 24px;
-    background-size: contain;
+    height: 24px;
     display: block;
     position: absolute;
-    height: 24px;
     right: 0;
-    top: 32px;
+    top: 22px;
     margin-right: 8px;
     pointer-events: none; }
 
@@ -771,7 +812,7 @@ select ~ :after {
     line-height: 16px;
     margin-bottom: 8px;
     font-weight: 700;
-    color: #3a3f4a;
+    color: #2C3038;
     transition: 0.25s ease-in-out; }
   .bech-input-label:focus-within label {
     color: #FF9100; }
@@ -787,30 +828,30 @@ select ~ :after {
   .bech-input-label textarea {
     border-radius: 4px;
     background-color: #ffffff;
-    border: solid 1px #a4aab6;
+    border: solid 1px #C3C7CE;
     padding: 9px 16px;
     line-height: 20px;
     font-size: 1.000em;
     font-weight: 700;
     transition: 0.25s ease-in-out;
-    color: #3a3f4a;
+    color: #2C3038;
     -webkit-appearance: none; }
     .bech-input-label input::placeholder,
     .bech-input-label select::placeholder,
     .bech-input-label textarea::placeholder {
-      color: #868c99;
+      color: #868C99;
       font-weight: 400; }
     .bech-input-label input:active,
     .bech-input-label select:active,
     .bech-input-label textarea:active {
       border: solid 1px #FF9100;
-      color: #3a3f4a; }
+      color: #2C3038; }
     .bech-input-label input:focus,
     .bech-input-label select:focus,
     .bech-input-label textarea:focus {
       outline: 0;
       border: solid 1px #FF9100;
-      color: #3a3f4a; }
+      color: #2C3038; }
     .bech-input-label input:focus + label,
     .bech-input-label select:focus + label,
     .bech-input-label textarea:focus + label {
@@ -818,7 +859,6 @@ select ~ :after {
     .bech-input-label input:disabled,
     .bech-input-label select:disabled,
     .bech-input-label textarea:disabled {
-      color: #868c99;
       font-weight: 400; }
       .bech-input-label input:disabled:after,
       .bech-input-label select:disabled:after,
@@ -828,23 +868,23 @@ select ~ :after {
     font-size: 12px;
     line-height: 16px;
     margin-top: 4px;
-    color: #868c99;
+    color: #868C99;
     font-weight: 600; }
     .bech-input-label .info-text:empty {
       margin: 0; }
     .bech-input-label .info-text--error {
-      color: #D13C3C; }
+      color: #D64040; }
   .bech-input-label .MsjeError {
     font-size: 12px;
     line-height: 16px;
     margin-top: 4px;
-    color: #D13C3C;
+    color: #D64040;
     font-weight: 600; }
     .bech-input-label .MsjeError:empty {
       margin: 0; }
 
 input.ng-invalid.ng-dirty.ng-invalid.ng-touched {
-  border: solid 1px #D13C3C; }
+  border: solid 1px #D64040; }
 
 .radio_list {
   display: flex;
@@ -873,14 +913,13 @@ select:-webkit-autofill {
   height: 44px;
   line-height: 25px;
   font-size: 16px;
-  font-family: 'nunito-regular';
-  font-weight: 700; }
+  font-weight: 600; }
   .small.button-primary-bech, .small.button-secondary-bech, .small.button-accent-bech, .small.button-accent2-bech, .small.button-disable-bech, .small.button-disable2-bech {
     width: 48%;
     margin: 8px 1%;
     height: 34px;
     line-height: 15px;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 13px;
     float: left; }
   .center.button-primary-bech, .center.button-secondary-bech, .center.button-accent-bech, .center.button-accent2-bech, .center.button-disable-bech, .center.button-disable2-bech {
@@ -947,11 +986,11 @@ select:-webkit-autofill {
   box-shadow: none;
   background: #E1E4E7;
   border: 2px solid #E1E4E7;
-  color: #A4AAB6; }
+  color: #C3C7CE; }
   .button-disable-bech:hover {
     background: #E1E4E7;
     text-decoration: none;
-    color: #A4AAB6; }
+    color: #C3C7CE; }
 
 .button-disable2-bech {
   box-shadow: none;
@@ -968,11 +1007,19 @@ select:-webkit-autofill {
   background-color: #FF9100;
   color: #ffffff; }
 .bech-table__success {
-  background-color: #20D4A4;
+  background-color: #06C790;
   color: #ffffff; }
 
+.triangulo {
+  background: rgba(0, 0, 0, 0.03);
+  -webkit-clip-path: polygon(0 0, 100% 0, 49% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 49% 100%, 0% 100%);
+  height: 56px;
+  width: 100px;
+  margin-bottom: -56px; }
+
 header {
-  background: linear-gradient(to right, #E86051, #FFA90A);
+  background-image: linear-gradient(-231deg, #E86051 0%, #FFA90A 46%, #FFB10A 100%);
   height: 56px;
   line-height: 55px;
   color: #ffffff;
@@ -999,7 +1046,7 @@ header {
       padding: 3px;
       font-size: 10px;
       z-index: 50000;
-      font-family: "nunito-light";
+      font-weight: 200;
       margin: -50px auto;
       display: block;
       line-height: 13px;
@@ -1009,7 +1056,7 @@ header {
   background-color: rgba(62, 80, 180, 0.1) !important;
   border: 1px solid rgba(62, 80, 180, 0.25);
   color: #3E50B4;
-  font-family: 'nunito-light';
+  font-weight: 400;
   font-size: 14px;
   margin: 20px 0; }
 
@@ -1021,30 +1068,5 @@ header {
   border: none; }
 .card .card-body.sin-padding {
   padding: 1.25rem 0px; }
-
-html {
-  font-size: 14px; }
-
-body {
-  font-size: 1rem;
-  font-family: "nunito-regular";
-  color: #3A3F4A; }
-
-/* etiquetas H para titulos */
-h1 {
-  font-size: 2rem; }
-
-h2 {
-  font-size: 1.8rem; }
-
-h3 {
-  font-size: 1.6rem; }
-
-h4 {
-  font-size: 1.4rem; }
-
-/* parrafos */
-p {
-  font-size: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

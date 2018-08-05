@@ -1,9 +1,9 @@
 // CAJAS DE ALERTA
 .alertabech {
-    background-color: rgba( $accent, .1) !important;
-    border: 1px solid rgba( $accent, .25);
-    color: $accent;
-    font-family: 'nunito-light';
+    background-color: rgba( $accent_color, .1) !important;
+    border: 1px solid rgba( $accent_color, .25);
+    color: $accent_color;
+    font-weight: 400;
     font-size: 14px;
     margin: 20px 0;
 }
