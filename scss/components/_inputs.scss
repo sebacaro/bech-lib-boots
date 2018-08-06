@@ -77,9 +77,7 @@ select ~ :after {
       }
     }
   
-    input,
-    select,
-    textarea {
+    input, select,textarea {
       border-radius: 4px;
       background-color: #ffffff;
       border: solid 1px $border_color;
