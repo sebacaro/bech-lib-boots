@@ -14,7 +14,7 @@
     position: relative;
   } 
   
-  .card,
+  .card-credit,
   .card-back {
     background: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.20);
@@ -147,7 +147,6 @@
   .used_number.front {
     left: 190px;
   }
-  
   
 .border-card {
   -webkit-clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
