@@ -3,7 +3,7 @@ select ~ :after {
     display: none;
   }
   
-  .bech-input-label {
+  .input-bech-label {
     &.bech-select {
       position: relative;
   
@@ -45,7 +45,7 @@ select ~ :after {
     }
   }
   
-  .bech-input-label {
+  .input-bech-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
@@ -134,39 +134,10 @@ select ~ :after {
         color: $red-color;
       }
     }
-  
-    .MsjeError {
-      font-size: 12px;
-      line-height: 16px;
-      margin-top: 4px;
-      color: $red_color;
-      font-weight: 600;
-  
-      &:empty {
-        margin: 0;
-      }
-    }
   }
   
   input.ng-invalid.ng-dirty.ng-invalid.ng-touched {
     border: solid 1px $red_color;
-  }
-  
-  // RADIOS
-  .radio_list {
-    display: flex;
-    flex-direction: column;
-  
-    mat-radio-button {
-      height: 48px;
-      display: flex;
-      align-items: center;
-  
-      label {
-        white-space: normal;
-        line-height: 24px;
-      }
-    }
   }
   
   input:-webkit-autofill,

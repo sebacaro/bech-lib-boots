@@ -11,28 +11,26 @@
 
 
 	<body>
-		<!-- comienzo alertas -->
 		<div class="container">
 			<!-- header -->
 			<h2>Header</h2>
-			<div class="triangulo"></div>
-			<header>
+			<div class="header-bech__triangle"></div>
+			<div class="header-bech">
 				<div class="col-12">
 					<div class="row">
-						<div class="col-2 col-sm-1 volver">
+						<div class="col-2 col-sm-1 header-bech__back">
 							<i class="bech_arrow_left"></i>
 						</div>
 						<div class="col-7 col-sm-9 ">Este es el título</div>
-						<div class="col-3 col-sm-2 notificacion">
+						<div class="col-3 col-sm-2 header-bech-notification">
 							<i class="bech_notifications"></i>
-							<div class="contenedor-numero">
+							<div class="content-number">
 								<span>99</span>
 							</div>
 						</div>
 					</div>
 				</div>
-			</header>
-
+			</div>
 			<!-- fin header -->
 
 			<!-- spinner-->
@@ -40,7 +38,7 @@
 				<div class="row">
 					<h2>Spinner</h2>
 					<div class="col-12">
-						<div class="spinner"></div>
+						<div class="spinner-bech"></div>
 					</div>
 					<div class="col-12 texto-bajada-spinner">Cargando...</div>
 				</div>
@@ -54,7 +52,7 @@
 			<div class="container">
 				<div class="row">
 					<h2>Steps</h2>
-					<div class="steps">
+					<div class="steps-bech">
 						<div class="stp3">
 							<div class="point left past">
 								<i class="bech_check"></i>
@@ -77,7 +75,7 @@
 			<!--sin clase paso por quemar (por defecto)-->
 			<div class="container">
 				<div class="row">
-					<div class="steps">
+					<div class="steps-bech">
 						<div class="stp4">
 							<div class="point left past">
 								<i class="bech_check"></i>
@@ -103,7 +101,7 @@
 			<!--sin clase paso por quemar (por defecto)-->
 			<div class="container">
 				<div class="row">
-					<div class="steps">
+					<div class="steps-bech">
 						<div class="stp5">
 							<div class="point left past">
 								<i class="bech_check"></i>
@@ -141,10 +139,16 @@
 			<!-- fin iconos -->
 
 			<div class="row">
-				<div class="col">
+				<div class="col-12">
 					<h2>Alerta</h2>
-					<div class="alert alert-info alertabech" id="alerta">
-						Lorem ipsum dolor sit amet.
+					<div class="alert alert-info alert-bech" id="alerta">
+						Mensaje ok
+						<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="alert alert-info alert-bech-ok" id="alerta">
+						Mensaje no ok
 						<button type="button" class="close" data-dismiss="alert" aria-label="Cerrar">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -162,19 +166,19 @@
 					<h2>Botones</h2>
 
 					<div class="col-12">
-						<button class="btn-lg btn-block button-primary-bech" alt="boton primario naranjo">boton</button>
+						<button class="btn-lg btn-block button-bech--primary" alt="boton primario naranjo">boton</button>
 					</div>
 					<div class="col-12">
 
-						<button href="#" class="btn-lg btn-block button-accent-bech" alt="boton acentuado azul">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--accent" alt="boton acentuado azul">Enlace</button>
 					</div>
 					<div class="col-12">
 
-						<button href="#" class="btn-lg btn-block button-secondary-bech" alt="boton secundario blanco">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--secondary" alt="boton secundario blanco">Enlace</button>
 					</div>
 					<div class="col-12">
 
-						<button href="#" class="btn-lg btn-block button-disable-bech" alt="boton desactivado">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--disable" alt="boton desactivado">Enlace</button>
 					</div>
 
 				</div>
@@ -185,22 +189,22 @@
 				<div class="col-12">
 					<h2>Botones Small</h2>
 					<div>
-						<button href="#" class="btn-lg btn-block button-primary-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--primary small">Enlace</button>
 					</div>
 					<div>
-						<button href="#" class="btn-lg btn-block button-secondary-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--secondary small">Enlace</button>
 					</div>
 					<div>
-						<button href="#" class="btn-lg btn-block button-accent-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--accent small">Enlace</button>
 					</div>
 					<div>
-						<button href="#" class="btn-lg btn-block button-accent2-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--accent2 small">Enlace</button>
 					</div>
 					<div>
-						<button href="#" class="btn-lg btn-block button-disable-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--disable small">Enlace</button>
 					</div>
 					<div>
-						<button href="#" class="btn-lg btn-block button-disable2-bech small">Enlace</button>
+						<button href="#" class="btn-lg btn-block button-bech--disable2 small">Enlace</button>
 					</div>
 				</div>
 
@@ -220,7 +224,7 @@
 							<h3 class="card-title">Titulo</h3>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique vero perferendis dolorem in libero
 								id omnis, esse nesciunt corrupti?</p>
-							<a href="#" class="btn-lg btn-block button-primary-bech" alt="boton primario naranjo">Boton</a>
+							<a href="#" class="btn-lg btn-block button-bech--primary" alt="boton primario naranjo">Boton</a>
 						</div>
 					</div>
 				</div>
@@ -236,7 +240,7 @@
 						<div class="card-body">
 							<h3 class="card-title">Lorem ipsum dolor.</h3>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam.</p>
-							<a href="#" class="btn-lg btn-block button-primary-bech small">Ir al post</a>
+							<a href="#" class="btn-lg btn-block button-bech--primary small">Ir al post</a>
 						</div>
 					</div>
 				</div>
@@ -251,7 +255,7 @@
 								<div class="col-9">
 									<h3 class="card-title">Lorem ipsum dolor.</h3>
 									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quibusdam.</p>
-									<a href="#" class="btn-lg btn-block button-primary-bech small">Ir al post</a>
+									<a href="#" class="btn-lg btn-block button-bech--primary small">Ir al post</a>
 								</div>
 								<div class="col-3">
 									<i class="bech_camera_video full"></i>
@@ -306,7 +310,7 @@
 			<div class="row mt-3">
 				<div class="col-12">
 					<p>
-						<a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="bloque1" class="btn-lg btn-block button-primary-bech">Bloque 1</a>
+						<a href="#bloque1" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="bloque1" class="btn-lg btn-block button-bech--primary">Bloque 1</a>
 					</p>
 					<div class="collapse" id="bloque1">
 						<div class="card card-body">
@@ -323,12 +327,12 @@
 					<div id="accordion">
 
 						<!-- CARD #1 -->
-						<div class="card bech-card">
-							<div class="card-header bech" id="heading1">
-								<h4 class="bech-title">
+						<div class="card collapsible-bech-card">
+							<div class="card-header collapsible-bech" id="heading1">
+								<h4 class="collapsible-bech__icon-title">
 									<a class="collapsed1" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-											<div class="texto-titulo">Contenido #1</div>
-										</a>
+										<div class="collapsible-bech__title">Contenido #1</div>
+									</a>
 								</h4>
 							</div>
 							<div id="collapse1" class="collapse show" arial-labelledby="heading1" data-parent="#accordion">
@@ -340,11 +344,11 @@
 						</div>
 
 						<!-- CARD #2 -->
-						<div class="card bech-card">
-							<div class="card-header bech" id="heading2">
-								<h4 class="bech-title">
+						<div class="card collapsible-bech-card">
+							<div class="card-header collapsible-bech" id="heading2">
+								<h4 class="collapsible-bech__icon-title">
 									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-										<div class="texto-titulo">Contenido #2</div>
+										<div class="collapsible-bech__title">Contenido #2</div>
 									</a>
 								</h4>
 							</div>
@@ -357,11 +361,11 @@
 						</div>
 
 						<!-- CARD #3 -->
-						<div class="card bech-card">
-							<div class="card-header bech" id="heading3">
-								<h4 class="bech-title">
+						<div class="card collapsible-bech-card">
+							<div class="card-header collapsible-bech" id="heading3">
+								<h4 class="collapsible-bech__icon-title">
 									<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-										<div class="texto-titulo">Contenido #3</div>
+										<div class="collapsible-bech__title">Contenido #3</div>
 									</a>
 								</h4>
 							</div>
@@ -385,16 +389,16 @@
 				<div class="col">
 					<h2>Popovers</h2>
 					<hr>
-					<button class="button-primary-bech small" data-container="body" data-placement="top" data-toggle="popover" title="Titulo del popover"
+					<button class="button-bech--primary small" data-container="body" data-placement="top" data-toggle="popover" title="Titulo del popover"
 					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Arriba</button>
 
-					<button class="button-primary-bech small" data-container="body" data-placement="bottom" data-toggle="popover" title="Titulo del popover"
+					<button class="button-bech--primary small" data-container="body" data-placement="bottom" data-toggle="popover" title="Titulo del popover"
 					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Abajo</button>
 
-					<button class="button-primary-bech small" data-container="body" data-placement="left" data-toggle="popover" title="Titulo del popover"
+					<button class="button-bech--primary small" data-container="body" data-placement="left" data-toggle="popover" title="Titulo del popover"
 					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Izquierda</button>
 
-					<button class="button-primary-bech small" data-container="body" data-placement="right" data-toggle="popover" title="Titulo del popover"
+					<button class="button-bech--primary small" data-container="body" data-placement="right" data-toggle="popover" title="Titulo del popover"
 					 data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, soluta.">Derecha</button>
 				</div>
 			</div>
@@ -421,12 +425,12 @@
 								<th>Pais</th>
 							</tr>
 						</thead>
-						<tr class="bech-table__success">
+						<tr class="table-bech__success">
 							<td>Carlos</td>
 							<td>21</td>
 							<td>Mexico</td>
 						</tr>
-						<tr class="bech-table__activo">
+						<tr class="table-bech__activo">
 							<td>Alejandro</td>
 							<td>34</td>
 							<td>España</td>
@@ -448,24 +452,24 @@
 			<div class="row mt-3">
 				<div class="col">
 					<h2>Modal</h2>
-					<button class="button-primary-bech small" data-toggle="modal" data-target="#fm-modal">Abrir Modal</button>
+					<button class="button-bech--primary small" data-toggle="modal" data-target="#fm-modal">Abrir Modal</button>
 					<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
-						<div class="modal-dialog bech-modal__dialogo">
-							<div class="modal-content bech-modal__contenido">
+						<div class="modal-dialog modal-bech__dialog">
+							<div class="modal-content modal-bech__content">
 								<div class="modal-body">
 									<div class="container-fluid">
 										<div class="row">
 											<div class="col-12">
-												<div class="bech-modal__icono">
+												<div class="modal-bech__icon">
 													<img src="img/check-outline.svg" alt="imagen">
 												</div>
-												<h5 class="bech-modal__titulo">Titulo Modal</h5>
-												<p class="bech-modal__texto">Este texto describe la instancia del modal, Este texto describe la instancia del modal</p>
+												<h5 class="modal-bech__title">Titulo Modal</h5>
+												<p class="modal-bech__text">Este texto describe la instancia del modal, Este texto describe la instancia del modal</p>
 											</div>
 										</div>
 									</div>
-									<button class="btn-lg btn-block button-secondary-bech small">Aceptar</button>
-									<button class="bbtn-lg btn-block button-primary-bech small" data-dismiss="modal">Cerrar</button>
+									<button class="btn-lg btn-block button-bech--secondary small">Aceptar</button>
+									<button class="bbtn-lg btn-block button-bech--primary small" data-dismiss="modal">Cerrar</button>
 								</div>
 							</div>
 						</div>
@@ -479,30 +483,30 @@
 		<br>
 		<div class="container">
 			<h2>Inputs</h2>
-			<div class="bech-input-label">
+			<div class="input-bech-label">
 				<label for="nombre">Número de tarjeta BIP</label>
 				<input id="nombre" type="number" placeholder="N° Bip de 8">
 			</div>
-			<div class="bech-input-label">
+			<div class="input-bech-label">
 				<label for="password">Contraseña</label>
 				<input id="pasword" type="password" placeholder="Ingresa tu contraseña">
 			</div>
-			<div class="bech-input-label">
+			<div class="input-bech-label">
 				<label for="rut">Rut</label>
 				<input disabled id="rut" type="text" placeholder="Ingresa tu Rut">
 				<div class="info-text info-text--error">Info text error</div>
 			</div>
-			<div class="bech-input-label input-prefix">
+			<div class="input-bech-label input-prefix">
 				<label for="tel">Teléfono</label>
 				<div class="prefix">+569</div>
 				<input type="text" placeholder="9076428" name="tel" maxlength="12">
 				<div class="info-text">Info text</div>
 			</div>
-			<div class="bech-input-label">
+			<div class="input-bech-label">
 				<label class="labels" for="mensaje">Mensaje</label>
 				<textarea id="mensaje" type="text" placeholder="Ingresa tu Rut"></textarea>
 			</div>
-			<div class="bech-input-label bech-select">
+			<div class="input-bech-label bech-select">
 				<label for="slect">Mensaje</label>
 				<select>
 					<option value="volvo">Volvo</option>
@@ -518,31 +522,31 @@
 		<div class="container">
 			<h2>Radio y Checkbox</h2>
 			<div>
-				<div class="radio">
+				<div class="radio-bech">
 					<input id="1" type="radio" name="g" checked>
 					<label for="1">Option 1</label>
 				</div>
-				<div class="radio">
+				<div class="radio-bech">
 					<input id="2" type="radio" name="g">
 					<label for="2">Option 2</label>
 				</div>
 			</div>
 			<div>
-				<div class="radio radio-inline">
+				<div class="radio-bech radio-inline">
 					<input id="3" type="radio" name="g2" checked>
 					<label for="3">Option 3</label>
 				</div>
-				<div class="radio radio-inline">
+				<div class="radio-bech radio-inline">
 					<input id="4" type="radio" name="g2">
 					<label for="4">Option 4</label>
 				</div>
 			</div>
 			<div>
-				<div class="radio radio-inline">
+				<div class="radio-bech radio-inline">
 					<input id="5" type="radio" name="g3" checked>
 					<label for="5"></label>
 				</div>
-				<div class="radio radio-inline">
+				<div class="radio-bech radio-inline">
 					<input id="6" type="radio" name="g3">
 					<label for="6">Option 6</label>
 				</div>
@@ -550,13 +554,43 @@
 
 			<!-- Checkbox -->
 			<br>
-			<label class="checkbox">
+			<label class="checkbox-bech">
 				<input type="checkbox">
 				<span style="font-size: 20px;">Checkbox</span>
 			</label>
 		</div>
 		<br>
 		<!-- fin checkbox y radio -->
+
+		<!-- Card -->
+		<div class="cc">
+			<span class="title">Visa Black</span>
+			<span class="cc-number">**** **** **** 3057</span>
+			<span class="visa-logo"></span>
+
+			<span class="national">Nacional</span>
+			<span class="inter front">Internacional</span>
+
+			<span class="available">Disponible</span>
+			<span class="available_inter front">Disponible</span>
+
+			<span class="available_number ">$2.644.860</span>
+			<span class="available_number front">US$ 1.200</span>
+
+			<span class="used">Utilizado</span>
+			<span class="used front">Utilizado</span>
+
+			<span class="used_number">$1.250.470</span>
+			<span class="used_number front">US$ 890</span>
+
+		</div>
+		<!-- /.cc -->
+		<!-- Fin Card -->
+
+
+
+
+
 
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.min.js"></script>

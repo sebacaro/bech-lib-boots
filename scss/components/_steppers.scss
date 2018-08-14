@@ -17,6 +17,7 @@
         animation-name: destacado;
         color: #ffffff;
     }
+
     &.past {
         background-color: $green_color;
         border: 1px solid $green_color;
@@ -24,15 +25,17 @@
         font-size: 13px;
         color:#ffffff;
     }
+
     &.left {
         float: left;
     }
+
     &.right {
         float: right;
     }            
 }
 //steps
-.steps {
+.steps-bech {
     border-bottom: 1px solid $border_color;
     height:8px;
     width: 100%;
@@ -45,6 +48,7 @@
             @extend %puntos;        
         }
     }
+    
     .stp4 {
         width:33%;
         &:nth-child(2), &:nth-child(3) {
@@ -55,6 +59,7 @@
         .point {
             @extend %puntos; 
         }
+
     }
     .stp5 {
         width:23%;

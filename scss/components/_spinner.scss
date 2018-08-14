@@ -1,11 +1,11 @@
 // LOADING
-  .spinner,.spinner:after{
+  .spinner-bech,.spinner:after{
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
  }
-.spinner {
+.spinner-bech {
     background-color: transparent;
     border-top: 5px solid rgba( $bech_color, 1.0 );
     border-right: 5px solid rgba( $bech_color, 1.0 );

@@ -1,26 +1,142 @@
-// CAJAS DE ALERTA
-.alertabech {
-    background-color: rgba( $accent_color, .1) !important;
-    border: 1px solid rgba( $accent_color, .25);
-    color: $accent_color;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 20px 0;
-}
+  /*
+   * The Card
+   *
+   * ==================== */
+  .cc,
+  .cc-back {
+    //background: linear-gradient(to left, #70257b, #8a2c94);
+    background: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.20);
+    border-radius: 8px;
+    display: block;
+    height: 195px;
+    margin: 60px auto;
+    position: relative;
+    text-align: left;
+    width: 312px;
+  }
+  
+  .title {
+    border-radius: 5px;
+    display: block;
+    height: 30px;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+  }
+  
+  .visa-logo {
+    background-image: url("http://via.placeholder.com/350x150");    
+    float: right;
+    display: block;
+  }
+  
+  .visa-logo:after {
+    content: 'Visa';
+    color: $font_color;
+    display: block;
+    padding-top: 20px;
+    padding-right: 11px;
+  }
+  
+  .cc-number {
+    color:$font_color;
+    bottom: 120px;
+    font-size: 1rem;
+    font-weight: 600;
+    left: 20px;
+    position: absolute;
+    letter-spacing: 0.28rem;
+  }
+  
+  .national {
+    color: $font_color;
+    bottom: 92px;
+    left: 20px;
+    position: absolute;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  
+  .national.front {
+    left: 190px;
+  }
+  
+  .inter {
+    color: $font_color;
+    bottom: 92px;
+    left: 20px;
+    position: absolute;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  
+  .inter.front {
+    left: 190px;
+  }
 
-// CARD PERSONALIZADA HOME
-.card {
-    .full {
-        font-size: 3.5em;
-        color: #dddddd;
-        text-align: center;
-    }
-    &.quitar-borde {
-        border: none; 
-    }
-    .card-body {
-        &.sin-padding {
-            padding: 1.25rem 0px;
-        }
-    }   
-}
+  .available  {
+    color: $font_color2;
+    bottom: 66px;
+    left: 20px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .available.front {
+    left: 190px;
+  }
+  
+  .available_inter  {
+    color: $font_color2;
+    bottom: 66px;
+    left: 20px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .available_inter.front {
+    left: 190px;
+  }
+
+  .available_number  {
+    color: $font_color;
+    bottom: 45px;
+    left: 20px;
+    position: absolute;
+    font-weight: 800;
+    font-size: 14px;
+  }
+  
+  .available_number.front {
+    left: 190px;
+  }
+  
+  .used {
+    color: $font_color2;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .used.front {
+    left: 190px;
+  }
+
+  .used_number {
+    color: $font_color;
+    bottom: 8px;
+    left: 20px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .used_number.front {
+    left: 190px;
+  }
+  
