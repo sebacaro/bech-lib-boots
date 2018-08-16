@@ -314,27 +314,27 @@ h4 {
 
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("././fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: 'Nunito Sans';
-  src: url("././fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Light.ttf") format("truetype");
+  src: url("assets/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Light.ttf") format("truetype");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("././fonts/nunito_sans/fonts/nunito_sans/NunitoSans-SemiBold.ttf") format("truetype");
+  src: url("assets/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("assets/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("././fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Bold.ttf") format("truetype");
+  src: url("assets/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("././fonts/nunito_sans/fonts/nunito_sans/NunitoSans-ExtraBold.ttf") format("truetype");
+  src: url("assets/fonts/nunito_sans/fonts/nunito_sans/NunitoSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal; }
 .spinner-bech, .spinner:after {
@@ -1042,22 +1042,32 @@ select:-webkit-autofill {
 .card .card-body.sin-padding {
   padding: 1.25rem 0px; }
 
-/*
- * The Card
- *
- * ==================== */
-.card-only {
+.card-only__card-back {
   background: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   display: block;
-  height: 165px;
   width: 320px;
   margin: 60px auto;
-  position: relative; }
+  position: relative;
+  text-align: center;
+  padding: 16px; }
+.card-only__title {
+  display: block;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #3E50B4;
+  letter-spacing: 0; }
+.card-only__text {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2C3038;
+  letter-spacing: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
-.card-credit,
-.card-back {
+.card-credit__card-back {
   background: #FFFFFF;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -1067,8 +1077,7 @@ select:-webkit-autofill {
   margin: 60px auto;
   position: relative;
   text-align: left; }
-
-.title {
+.card-credit__title {
   border-radius: 5px;
   display: block;
   height: 30px;
@@ -1076,17 +1085,15 @@ select:-webkit-autofill {
   top: 20px;
   position: absolute;
   font-weight: 600; }
-
-.visa-logo {
+.card-credit__visa-logo {
   float: right;
   display: block;
-  background: url("/Users/sebacaro/Documents/APP_20/bech-lib-boots/img/visa.png") no-repeat top center;
+  background: url("../assets/img/visa.png") no-repeat top center;
   width: 48px;
   height: 32px;
   margin-top: 17px;
   margin-right: 10px; }
-
-.card-number {
+.card-credit__card-number {
   color: #2C3038;
   bottom: 122px;
   font-size: 1rem;
@@ -1094,90 +1101,144 @@ select:-webkit-autofill {
   left: 20px;
   position: absolute;
   letter-spacing: 0.28rem; }
-
-.national {
+.card-credit__national {
   color: #2C3038;
   bottom: 95px;
   left: 20px;
   position: absolute;
   font-weight: 800;
   font-size: 12px; }
-
-.national.front {
+.card-credit__national.front {
   left: 190px; }
-
-.inter {
+.card-credit__inter {
   color: #2C3038;
   bottom: 95px;
   left: 20px;
   position: absolute;
   font-weight: 800;
   font-size: 12px; }
-
-.inter.front {
+.card-credit__inter.front {
   left: 190px; }
-
-.available {
+.card-credit__available {
   color: #868C99;
   bottom: 73px;
   left: 20px;
   position: absolute;
   font-weight: 400;
   font-size: 12px; }
-
-.available.front {
+.card-credit__available.front {
   left: 190px; }
-
-.available_inter {
+.card-credit__available--inter {
   color: #868C99;
   bottom: 73px;
   left: 20px;
   position: absolute;
   font-weight: 400;
   font-size: 12px; }
-
-.available_inter.front {
+.card-credit__available--inter.front {
   left: 190px; }
-
-.available_number {
+.card-credit__available--number {
   color: #2C3038;
   bottom: 52px;
   left: 20px;
   position: absolute;
   font-weight: 800;
   font-size: 14px; }
-
-.available_number.front {
+.card-credit__available--number.front {
   left: 190px; }
-
-.used {
+.card-credit__used {
   color: #868C99;
   bottom: 28px;
   left: 20px;
   position: absolute;
   font-weight: 400;
   font-size: 12px; }
-
-.used.front {
+.card-credit__used.front {
   left: 190px; }
-
-.used_number {
+.card-credit__used_number {
   color: #2C3038;
   bottom: 10px;
   left: 20px;
   position: absolute;
   font-weight: 400;
   font-size: 12px; }
-
-.used_number.front {
+.card-credit__used_number.front {
   left: 190px; }
-
-.border-card {
+.card-credit__border-card {
   -webkit-clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
   clip-path: polygon(0 0, 15% 0, 15% 100%, 0% 100%);
   width: 43px;
   height: 50px;
   background: #000000;
   border-radius: 8px 0 0 0; }
+
+.item-bech__back {
+  background-color: #FAFAFA;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 3px; }
+.item-bech__avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 13px;
+  margin-right: 16px;
+  background-image: url("../assets/img/patito_40x40.png"); }
+.item-bech__title {
+  font-size: 1.2rem;
+  color: #2C3038;
+  letter-spacing: 0;
+  font-weight: 800;
+  position: absolute;
+  margin-top: 13px; }
+.item-bech__text {
+  font-size: 1rem;
+  color: #2C3038;
+  letter-spacing: 0;
+  font-weight: 400;
+  position: absolute;
+  margin-top: 34px; }
+.item-bech__bubble {
+  background-image: linear-gradient(-230deg, #E86051 0%, #FFA90A 55%, #FFB10A 100%);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.14);
+  height: 14px;
+  width: 14px;
+  border-radius: 100px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: -26px; }
+
+.item-bech-alone__back {
+  background-color: #FAFAFA;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+  .item-bech-alone__back:after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid black;
+    display: block; }
+.item-bech-alone__title {
+  font-size: 1.2rem;
+  color: #2C3038;
+  letter-spacing: 0;
+  font-weight: 800;
+  margin-top: 13px; }
+  .item-bech-alone__title:after {
+    font-family: 'BECH';
+    content: "\e953";
+    float: right;
+    font-size: 32px;
+    font-weight: 800;
+    color: #FF9100;
+    height: 20px;
+    width: 20px;
+    margin-top: -10px; }
 
 /*# sourceMappingURL=main.css.map */

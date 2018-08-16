@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="scss/main.css">
-	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="assets/fonts/fonts.css">
 
 
 	<body>
@@ -219,7 +219,7 @@
 				<div class="col-12">
 					<h2>Card con imagen</h2>
 					<div class="card">
-						<img src="img/bg.jpg" class="card-img-top img-fluid" alt="">
+						<img src="assets/img/bg.jpg" class="card-img-top img-fluid" alt="">
 						<div class="card-body">
 							<h3 class="card-title">Titulo</h3>
 							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium similique vero perferendis dolorem in libero
@@ -461,7 +461,7 @@
 										<div class="row">
 											<div class="col-12">
 												<div class="modal-bech__icon">
-													<img src="img/check-outline.svg" alt="imagen">
+													<img src="assets/img/check-outline.svg" alt="imagen">
 												</div>
 												<h5 class="modal-bech__title">Titulo Modal</h5>
 												<p class="modal-bech__text">Este texto describe la instancia del modal, Este texto describe la instancia del modal</p>
@@ -563,33 +563,67 @@
 		<!-- fin checkbox y radio -->
 
 		<!-- Card -->
-		<div class="card-credit">
-			<span class="border-card"></span>
-			<div class="visa-logo"></div>
-			<span class="title">Visa Black</span>
-			<span class="card-number">**** **** **** 3057</span>	
+		<div class="card-credit__card-back">
+			<span class="card-credit__border-card"></span>
+			<span class="card-credit__visa-logo"></span>
+			<span class="card-credit__title">Visa Black</span>
+			<span class="card-credit__card-number">**** **** **** 3057</span>
 
-			<span class="national">Nacional</span>
-			<span class="inter front">Internacional</span>
+			<span class="card-credit__national">Nacional</span>
+			<span class="card-credit__inter front">Internacional</span>
 
-			<span class="available">Disponible</span>
-			<span class="available_inter front">Disponible</span>
+			<span class="card-credit__available">Disponible</span>
+			<span class="card-credit__available--inter front">Disponible</span>
 
-			<span class="available_number ">$2.644.860</span>
-			<span class="available_number front">US$ 1.200</span>
+			<span class="card-credit__available--number">$2.644.860</span>
+			<span class="card-credit__available--number front">US$ 1.200</span>
 
-			<span class="used">Utilizado</span>
-			<span class="used front">Utilizado</span>
+			<span class="card-credit__used">Utilizado</span>
+			<span class="card-credit__used front">Utilizado</span>
 
-			<span class="used_number">$1.250.470</span>
-			<span class="used_number front">US$ 890</span>
+			<span class="card-credit__used_number">$1.250.470</span>
+			<span class="card-credit__used_number front">US$ 890</span>
 		</div>
 		<!-- Fin Card -->
 
-			<!-- Card -->
-			<div class="card-only">
+		<!-- Card solo-->
+		<div class="card-only__card-back">
+			<span class="card-only__title">Titulo de aviso</span>
+			<span class="card-only__text">Texto de aviso / Ya tienes disponible en tu CuentaRUT los $7.000 del papel higiénico.</span>
+			<button href="#" class="btn-lg btn-block button-bech--secondary" alt="boton secundario blanco">Más Información</button>
+		</div>
+		<!-- Fin Card solo -->
+
+
+		<div class="container bg-light">
+			<div class="item-bech__back">
+				<span class="item-bech__avatar">
+					<img src="http://i.pravatar.cc/40" class="img-fluid" alt="">
+				</span>
+				<span class="item-bech__bubble"></span>
+				<span class="item-bech__title">Título</span>
+				<span class="item-bech__text">Texto que puede ir</span>
 			</div>
-				<!-- Fin Card -->
+			<div class="item-bech__back">
+				<span class="item-bech__avatar">
+					<img src="http://i.pravatar.cc/40" class="img-fluid" alt="">
+				</span>
+				<span class="item-bech__bubble"></span>
+				<span class="item-bech__title">Título</span>
+				<span class="item-bech__text">Texto que puede ir</span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="item-bech-alone__back">
+			<span class="item-bech-alone__title">Título</span>
+			<span class="item-bech-alone"></span>
+		</div>
+		<div class="item-bech-alone__back">
+			<span class="item-bech-alone__title">Título</span>
+			<span class="item-bech-alone"></span>
+		</div>
+
 
 
 

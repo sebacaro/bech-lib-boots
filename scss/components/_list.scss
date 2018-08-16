@@ -1,0 +1,96 @@
+.item-bech {
+    &__back {
+        background-color: #FAFAFA;
+        padding-left: 20px;
+        padding-top: 2px;
+        padding-bottom: 3px;
+    }
+
+    &__avatar {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 100px;
+        margin-top: 13px;
+        margin-right: 16px;
+        background-image: url("../assets/img/patito_40x40.png");
+        //background-color: #FFA90A;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        color: $font_color;
+        letter-spacing: 0;
+        font-weight: 800;
+        position: absolute;
+        margin-top: 13px;
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: $font_color;
+        letter-spacing: 0;
+        font-weight: 400;
+        position: absolute;
+        margin-top: 34px;
+    }
+
+    &__bubble {
+        background-image: linear-gradient(-230deg, #E86051 0%, #FFA90A 55%, #FFB10A 100%);
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14);
+        height: 14px;
+        width: 14px;
+        border-radius: 100px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: -26px;
+    }
+}
+
+.item-bech-alone {
+    &__back {
+        background-color: #FAFAFA;
+        padding-left: 20px;
+        padding-right: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:after {
+            content:"";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0.5em;
+            border-top: 1px solid black;
+            display: block;
+        }
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        color: $font_color;
+        letter-spacing: 0;
+        font-weight: 800;
+        margin-top: 13px;
+
+        &:after {
+            font-family: 'BECH';
+            content: "\e953";
+            float:right;
+            font-size:32px;
+            font-weight:800;
+            color: $bech_color;
+            height: 20px;
+            width: 20px;
+            margin-top: -10px;
+        }
+    }
+
+}
+
+
+
+
+
+
