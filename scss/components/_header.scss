@@ -1,5 +1,10 @@
 .header-bech {
-    background-image: linear-gradient(to left bottom, #e86051, #f57145, #fd8537, #ff9a26, #ffb10a);    height: 56px;
+    background: -webkit-linear-gradient(left, rgb(251, 157, 21) 0%, rgb(239, 115, 64) 100%);
+    background: -o-linear-gradient(left, rgb(251, 157, 21) 0%, rgb(239, 115, 64) 100%);
+    background: -ms-linear-gradient(left, rgb(251, 157, 21) 0%, rgb(239, 115, 64) 100%);
+    background: -moz-linear-gradient(left, rgb(251, 157, 21) 0%, rgb(239, 115, 64) 100%);
+    background: linear-gradient(to right, rgb(251, 157, 21) 0%, rgb(239, 115, 64) 100%);    
+    height: 56px;
     line-height: 55px;
     color: #ffffff;
     font-size: 18px;
@@ -7,11 +12,12 @@
 
     &__triangle {
         background: rgba(0,0,0,0.03);
-        -webkit-clip-path: polygon(0 0, 100% 0, 49% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 49% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 64% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 64% 100%);
         height: 56px;
         width: 100px;
         margin-bottom: -56px;
+        float: right;
     }
 
     &__back {

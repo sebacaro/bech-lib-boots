@@ -8,15 +8,15 @@
       margin: 1.5rem;
     }
 
-    &__icon {
-      padding-bottom: 24px;
+    &__icon:after {
+      font-family: 'BECH';
+      content: "\e931";
+      font-size: 72px;
+      color: $green_color;
+      display: block;
       text-align: center;
-      margin: 0 auto;
-  
-      img {
-        width: 64px;
-        height: 64px;
-      }
+      margin-top: -16px;
+      margin-bottom: 5px;
     }
   
     &__title {
@@ -31,11 +31,19 @@
       text-align: center;
       line-height: 20px;
       font-size: 14px;
-      color: $font_color2;
-      margin-bottom: 16px;
+      font-weight: 400;
+      color: $font_color;
+      margin-bottom: 24px;
     } 
   }
 
   .modal-dialog {
     max-width:100%;
+  }
+
+  .modal-body--bech {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 16px;
+      padding-right: 16px;
   }
